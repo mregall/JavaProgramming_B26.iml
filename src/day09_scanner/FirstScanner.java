@@ -1,0 +1,23 @@
+package day09_scanner;
+
+import java.util.Scanner;
+
+public class FirstScanner {
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Please enter a number");
+        int number = input.nextInt();
+        int multiply = number * 20;
+        System.out.println(multiply);
+
+
+
+
+
+
+
+
+    }
+}
