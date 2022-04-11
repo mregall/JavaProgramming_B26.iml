@@ -8,17 +8,18 @@ public class ABCError {
         When the user types the order A, B, C they get an error.  No other sequence gets an error.
 
         A -> B -> C = ERROR
-
         Other orders are okay
 
         Create a function that outputs all the users who experience the error
         Logs are chronological
          */
+
         //Format: {"Action:UserID", "Action:UserID", ...}
 
         String[] logs = {"A:1","A:1","A:2","A:3","A:1","B:1","B:1","B:2","B:3","A:3","C:3","C:2","C:1","B:1","C:1" };
 
         System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+        //First Approach
 
         // will create 3 Strings to store Button sequence
         String u1="", u2="", u3="";
@@ -44,6 +45,7 @@ public class ABCError {
         }
 
         System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+        //Second Approach
 
         for (String log : logs) {
             String[] action = log.split(":");
@@ -67,11 +69,7 @@ public class ABCError {
         }
 
         System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
-        //this was my first try it just sorts the array by the position index 2
-
-        int n = 3;
-        String output = "";
-
+        //this was my first try it just sorts the array with a lambda by the position index 2
 
         Arrays.sort(logs, (str1, str2) -> {
             String substr1 = str1.substring(2);
