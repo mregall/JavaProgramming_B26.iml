@@ -1,4 +1,4 @@
-package day43_custom_classes;
+package day43_custom_classes2;
 
 public class UsePhone {
     public static void main(String[] args) {
