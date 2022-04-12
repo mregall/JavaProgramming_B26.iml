@@ -3,7 +3,7 @@ package day44_custom_classes3;
 public class TestChaining {
     public static void main(String[] args) {
 
-        new ChainExample(10);
+        ChainExample smith = new ChainExample(10);
 
         System.out.println("=================");
 
@@ -11,6 +11,6 @@ public class TestChaining {
 
         System.out.println("+++++++++++++++++");
 
-        new ChainExample(4.3);
+        new ChainExample(4.9);
     }
 }
