@@ -1,4 +1,4 @@
-package day44_custom_classes3;
+package day45_custom_classes4;
 
 public class Offer {
     /*
@@ -54,9 +54,15 @@ public class Offer {
     Create a separate class to create and test the Offer objects
      */
 
-
-
-
-
+    @Override
+    public String toString() {
+        return "Offer{" +
+                "location='" + location + '\'' +
+                ", company='" + company + '\'' +
+                ", salary=" + salary +
+                ", isFullTime=" + isFullTime +
+                ", daysPTO=" + daysPTO +
+                '}' + "\n";
+    }
 }
 
