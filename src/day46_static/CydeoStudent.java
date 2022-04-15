@@ -36,5 +36,6 @@ public class CydeoStudent {
                 "name='" + name + '\'' +
                 ", groupNumber=" + groupNumber +
                 '}';
+
     }
 }
