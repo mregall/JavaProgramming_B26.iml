@@ -8,7 +8,7 @@ public class CydeoStudent {
     int groupNumber;
 
     static int batchNumber;
-    static String[] instructors;
+    public static String[] instructors;
     static String schoolName;
 
     // you can assign and declare at the same time, but it is not recommended, we will use static block to assign

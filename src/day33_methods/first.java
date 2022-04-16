@@ -8,5 +8,8 @@ public class first {
         }else{
             System.out.println("password must be at least 3 characters long");
         }
+
+
     }
 }
+
