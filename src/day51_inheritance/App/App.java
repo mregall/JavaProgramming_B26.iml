@@ -1,5 +1,5 @@
 package day51_inheritance.app;
-
+//parent class
 public class App {
     String name;
     double version;
@@ -16,7 +16,7 @@ public class App {
 }
 
 /*
-Create an App class
+Create an day51_inheritance.App class
 
     - create variables:
         name (app name), version
