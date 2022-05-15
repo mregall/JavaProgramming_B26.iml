@@ -10,9 +10,6 @@ public class Translator {
         turkish.hi();
         turkish.bye();
 
-
+        System.out.println(Language.PLANET);
     }
-
-
-
 }

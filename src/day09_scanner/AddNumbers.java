@@ -13,13 +13,15 @@ public class AddNumbers {
 
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Please enter 3 numbers. Hit enter after each");
+        System.out.println("Enter Max Price: ");
 
-        int num1 = input.nextInt();
-        int num2 = input.nextInt();
-        int num3 = input.nextInt();
+        double max = input.nextDouble();
+        System.out.println("Enter Current Price: ");
+        double current = input.nextDouble();
+        double percent = ((max-current)/max);
 
-        System.out.println("The sum is " + (num1 + num2 + num3));
+
+        System.out.println("The percent from the high is: " + String.format("%.2f", percent));
 
     }
 }
