@@ -8,5 +8,23 @@ public class UserAccounts {
         account1.withdraw(500);
         System.out.println(account1.balance);
 
+        try {
+            account1.login("jamesbond", "007");
+        } catch (InvalidCredentialsException e) {
+            System.out.println(e.getMessage());
+        }
+
+        try {
+            account1.login("james", "007");
+        } catch (InvalidCredentialsException e) {
+            System.out.println(e.getMessage());
+        }
+
+        try {
+            account1.login("jamesbond", "07");
+        } catch (InvalidCredentialsException e) {
+            System.out.println(e.getMessage());
+        }
+
     }
 }
